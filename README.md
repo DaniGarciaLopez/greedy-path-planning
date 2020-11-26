@@ -17,3 +17,5 @@ Para evitar eso, sería conveniente aplicar un algoritmo de búsqueda en nodos c
 - Los mapas y los algoritmos se seleccionan mediante la terminal. Los puntos de inicio y final se cargan mediante un diccionario. Se evitan errores en la introducción de los números de selección.
 - Se calcula el tiempo de cómputo de cada algoritmo. Este cálculo ignora las esperas realizadas para la visualización.
 - Vídeo: https://youtu.be/eMjHF4yqs44
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/eMjHF4yqs44/0.jpg)](https://youtu.be/eMjHF4yqs44)
