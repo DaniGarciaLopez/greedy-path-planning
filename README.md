@@ -1,21 +1,15 @@
-# Descripción del algortimo
+# Algorithm description
+The implemented greedy algorithm uses a heuristic based on the randomization of the turning direction to adapt to any type of map. At the beginning a direction is selected and followed until it collides with an obstacle. Subsequently another direction is selected, if there is no obstacle and it is not a visited path it follows that direction until it collides again. When there is no free path, it returns to the previous node and checks if it has any free direction, else it continues iterating in the previous nodes.
 
-El algoritmo greedy implementado utiliza una heurística basada en la aleatoriedad del sentido de giro para adaptarse a cualquier tipo de mapa. 
-En el inicio se selecciona una dirección y se sigue hasta que se colisiona con un obstáculo.
-Posteriormente se selecciona otra dirección, si no hay obstáculo y no es un camino visitado se sigue esa dirección hasta que vuelve a colisionar.
-Cuando no hay camino libre, se vuelve al nodo anterior y se comprueba si tiene algúna dirección libre y si no, se sigue iterando en los nodos previos.
+# Results
 
-# Resultados
+The greedy algorithm proves to be in general faster than BFS in most situations. However, it does not usually find the optimal path. This is especially evident when the map haa a square shape and the algorithm performs spiral paths. To avoid that, it would be convenient to apply a node search algorithm such as Dijsktra or A* after having reached the goal to trace the final path.
 
-El algoritmo greedy resulta ser en general más rápido que el BFS en la mayoría de situaciones. 
-Sin embargo, no suele encontrar el camino óptimo. Esto se hace especialmente evidente cuando los mapas son muy cuadrados y el algoritmo realiza caminos en forma de espiral. 
-Para evitar eso, sería conveniente aplicar un algoritmo de búsqueda en nodos como Dijsktra o A* tras haber llegado a la meta para trazar el camino final.
-
-# Extras
-- Se ha realizado una interfaz gráfica para visualizar los mapas de forma cómoda en la terminal. El borrado de pantalla es compatible con windows y linux. La tasa de refresco se modifica con la variable "DISPLAY_TIME".
-- La ruta final se representa en el mapa al encontrar la meta.
-- Los mapas y los algoritmos se seleccionan mediante la terminal. Los puntos de inicio y final se cargan mediante un diccionario. Se evitan errores en la introducción de los números de selección.
-- Se calcula el tiempo de cómputo de cada algoritmo. Este cálculo ignora las esperas realizadas para la visualización.
-- Vídeo: https://youtu.be/eMjHF4yqs44
+# Notes
+- A graphical interface has been made to display the maps comfortably on the terminal. Screen wipe is compatible with windows and linux. The refresh rate is modified with the variable "DISPLAY_TIME"
+- The final route is represented on the map when the goal is found
+- Maps and algorithms are selected in the terminal. Start and end points are loaded via a dictionary. Errors in entering selection numbers are avoided.
+- The computation time of each algorithm is calculated.
+- Video: https://youtu.be/eMjHF4yqs44
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/eMjHF4yqs44/0.jpg)](https://youtu.be/eMjHF4yqs44)
